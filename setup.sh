@@ -28,7 +28,14 @@ brew cask install genymotion
 brew cask install sourcetree
 brew cask install sublime-text
 brew cask install shiftit
-brew cask install safe-in-cloud
 
-pip install virtualenv
-pip install virtualenvwrapper
+echo 'Configurando git'
+git config --global push.default simple
+git config --global user.name "Ronan Rodrigo Nunes"
+git config --global user.email "ronan.nunes@me.com"
+git config --global core.editor nano
+git config --global color.ui true
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
