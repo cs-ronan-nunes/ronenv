@@ -30,6 +30,7 @@ brew cask install sublime-text
 brew cask install shiftit
 brew cask install transmission
 brew cask install vlc
+brew cask install appcleaner
 
 echo 'Configurando git'
 git config --global push.default simple
