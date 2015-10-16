@@ -17,7 +17,7 @@ brew install autojump
 brew install rbenv ruby-build
 
 brew install caskroom/cask/brew-cask
-export HOMEBREW_CASK_OPTS="--appdir=/Applications”
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 brew cask install slack
 brew cask install google-chrome
 brew cask install sequel-pro
