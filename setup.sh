@@ -28,6 +28,7 @@ brew cask install genymotion
 brew cask install sourcetree
 brew cask install sublime-text
 brew cask install shiftit
+brew cask install transmission
 
 echo 'Configurando git'
 git config --global push.default simple
