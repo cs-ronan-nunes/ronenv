@@ -16,22 +16,6 @@ brew install zsh-syntax-highlighting
 brew install autojump
 brew install rbenv ruby-build
 
-brew install caskroom/cask/brew-cask
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-brew cask install slack
-brew cask install google-chrome
-brew cask install sequel-pro
-brew cask install pycharm
-brew cask install xamarin
-brew cask install virtualbox
-brew cask install genymotion
-brew cask install sourcetree
-brew cask install sublime-text
-brew cask install shiftit
-brew cask install transmission
-brew cask install vlc
-brew cask install appcleaner
-
 echo 'Configurando git'
 git config --global push.default simple
 git config --global user.name "Ronan Rodrigo Nunes"
@@ -42,3 +26,21 @@ git config --global alias.co checkout
 git config --global alias.br branch
 git config --global alias.ci commit
 git config --global alias.st status
+
+echo 'Sync Terminal Preferences'
+mkdir ~/.SyncTerminal
+git clone git@github.com:ronanrodrigo/SyncTerminal.git ~/.SyncTerminal
+
+echo 'Sync Xcode Preferences'
+mkdir -p ~/Library/Developer/Xcode/UserData 
+cd ~/Library/Developer/Xcode/UserData
+git remote add origin git@github.com:ronanrodrigo/SyncXcode.git
+git fetch
+git checkout -t origin/master
+
+echo 'Sync Sublime Text Preferences'
+mkdir -p ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User 
+git remote add origin git@github.com:ronanrodrigo/SyncSublime.git
+git fetch
+git checkout -t origin/master
