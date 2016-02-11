@@ -34,6 +34,7 @@ git clone git@github.com:ronanrodrigo/SyncTerminal.git ~/.SyncTerminal
 echo 'Sync Xcode Preferences'
 mkdir -p ~/Library/Developer/Xcode/UserData 
 cd ~/Library/Developer/Xcode/UserData
+git init
 git remote add origin git@github.com:ronanrodrigo/SyncXcode.git
 git fetch
 git checkout -t origin/master
@@ -41,6 +42,7 @@ git checkout -t origin/master
 echo 'Sync Sublime Text Preferences'
 mkdir -p ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User 
+git init
 git remote add origin git@github.com:ronanrodrigo/SyncSublime.git
 git fetch
 git checkout -t origin/master
