@@ -40,6 +40,7 @@ brew cask install opensim
 brew cask install postman
 brew cask install playnow
 brew cask install appcode
+brew cask install spotify
 
 echo '\nInstalling APPs from Mac APP Store\n'
 brew install mas
