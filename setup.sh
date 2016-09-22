@@ -4,37 +4,48 @@ cp zshrc ~/.zshrc
 chsh -s /bin/zsh
 echo 'eval "$(rbenv init -)"' >> ~/.zshrc
 
-echo 'Instalando Homebrew'
+echo 'Intalling Homebrew'
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew update
-brew doctor
 
-echo 'Instalando pacotes'
+echo 'Intalling Bash Packages'
 brew install zsh-completions
 brew install zsh-history-substring-search
 brew install zsh-syntax-highlighting
 brew install autojump
 brew install rbenv ruby-build
 
-echo 'Configurando git'
+echo 'Configuring git'
 git config --global push.default simple
 git config --global user.name "Ronan Rodrigo Nunes"
 git config --global user.email "ronan.nunes@me.com"
-git config --global core.editor nano
 git config --global color.ui true
 git config --global alias.co checkout
 git config --global alias.br branch
 git config --global alias.ci commit
 git config --global alias.st status
 
-echo 'Sync Terminal Preferences'
-mkdir ~/.SyncTerminal
-git clone git@github.com:ronanrodrigo/SyncTerminal.git ~/.SyncTerminal
+echo 'Installing APPs from Cask'
+echo "\nexport HOMEBREW_CASK_OPTS=\"--appdir=/Applications\"" >> .zshrc
+brew install cask
+brew cask install atom
+brew cask install appcleaner
+brew cask install charles
+brew cask install skype
+brew cask install google-chrome
+brew cask install shiftit
+brew cask install sourcetree
+brew cask install opensim
+brew cask install postman
+brew cask install playnow
+brew cask install appcode
 
-echo 'Sync Sublime Text Preferences'
-mkdir -p ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User 
-git init
-git remote add origin git@github.com:ronanrodrigo/SyncSublime.git
-git fetch
-git checkout -t origin/master
+echo 'Installing APPs from Mac APP Store'
+brew install mas
+mas install 970432740 # Right Click Booster
+mas install 935250717 # MonthlyCal
+mas install 449589707 # Dash
+mas install 409789998 # Twitter
+mas install 595191960 # CopyClip
+mas install 809625456 # Asset Catalog Creator
+mas install 497799835 # Xcode
+mas install 883070818 # SafeInCloud
