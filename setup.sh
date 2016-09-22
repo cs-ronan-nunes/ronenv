@@ -14,7 +14,7 @@ brew install zsh-syntax-highlighting
 brew install autojump
 brew install rbenv ruby-build
 
-echo 'Configuring git'
+echo 'Configuring GIT'
 git config --global push.default simple
 git config --global user.name "Ronan Rodrigo Nunes"
 git config --global user.email "ronan.nunes@me.com"
