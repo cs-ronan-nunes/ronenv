@@ -1,30 +1,32 @@
-echo 'Configurando ZSH'
+echo 'Setup ZSH\n'
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 cp zshrc ~/.zshrc
 chsh -s /bin/zsh
 echo 'eval "$(rbenv init -)"' >> ~/.zshrc
 
-echo 'Intalling Homebrew'
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-echo 'Intalling Bash Packages'
-brew install zsh-completions
-brew install zsh-history-substring-search
-brew install zsh-syntax-highlighting
-brew install autojump
-brew install rbenv ruby-build
-
-echo 'Configuring GIT'
+echo '\nSetup GIT\n'
+read -p 'Your full name: ' user_name
+read -p 'Your e-mail: ' user_mail
 git config --global push.default simple
-git config --global user.name "Ronan Rodrigo Nunes"
-git config --global user.email "ronan.nunes@me.com"
+git config --global user.name "$user_name"
+git config --global user.email "$user_mail"
 git config --global color.ui true
 git config --global alias.co checkout
 git config --global alias.br branch
 git config --global alias.ci commit
 git config --global alias.st status
 
-echo 'Installing APPs from Cask'
+echo '\nIntalling Homebrew\n'
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+echo '\nIntalling Bash Packages\n'
+brew install zsh-completions
+brew install zsh-history-substring-search
+brew install zsh-syntax-highlighting
+brew install autojump
+brew install rbenv ruby-build
+
+echo '\nInstalling APPs from Cask\n'
 echo "\nexport HOMEBREW_CASK_OPTS=\"--appdir=/Applications\"" >> .zshrc
 brew install cask
 brew cask install atom
@@ -39,7 +41,7 @@ brew cask install postman
 brew cask install playnow
 brew cask install appcode
 
-echo 'Installing APPs from Mac APP Store'
+echo '\nInstalling APPs from Mac APP Store\n'
 brew install mas
 mas install 970432740 # Right Click Booster
 mas install 935250717 # MonthlyCal
