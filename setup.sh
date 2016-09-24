@@ -41,6 +41,7 @@ brew cask install postman
 brew cask install playnow
 brew cask install appcode
 brew cask install spotify
+brew cask install genymotion
 
 echo '\nInstalling APPs from Mac APP Store\n'
 brew install mas
