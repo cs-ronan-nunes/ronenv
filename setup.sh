@@ -52,3 +52,4 @@ mas install 595191960 # CopyClip
 mas install 809625456 # Asset Catalog Creator
 mas install 497799835 # Xcode
 mas install 883070818 # SafeInCloud
+mas install 411673888 # EasyFind
