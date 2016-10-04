@@ -29,7 +29,7 @@ brew install rbenv ruby-build
 echo '\nInstalling APPs from Cask\n'
 echo "\nexport HOMEBREW_CASK_OPTS=\"--appdir=/Applications\"" >> .zshrc
 brew install cask
-brew cask install atom
+brew cask install sublime
 brew cask install appcleaner
 brew cask install charles
 brew cask install skype
