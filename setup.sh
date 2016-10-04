@@ -29,6 +29,7 @@ brew install rbenv ruby-build
 echo '\nInstalling APPs from Cask\n'
 echo "\nexport HOMEBREW_CASK_OPTS=\"--appdir=/Applications\"" >> .zshrc
 brew install cask
+brew cask install megasync
 brew cask install sublime-text
 brew cask install appcleaner
 brew cask install charles
@@ -42,6 +43,7 @@ brew cask install playnow
 brew cask install appcode
 brew cask install spotify
 brew cask install genymotion
+brew cask install vlc
 
 echo '\nInstalling APPs from Mac APP Store\n'
 brew install mas
@@ -54,3 +56,4 @@ mas install 809625456 # Asset Catalog Creator
 mas install 497799835 # Xcode
 mas install 883070818 # SafeInCloud
 mas install 411673888 # EasyFind
+mas install 935250717 # MonthlyCal
