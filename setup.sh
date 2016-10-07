@@ -25,6 +25,7 @@ brew install zsh-history-substring-search
 brew install zsh-syntax-highlighting
 brew install autojump
 brew install rbenv ruby-build
+brew install swiftlint
 
 echo '\nInstalling APPs from Cask\n'
 echo "\nexport HOMEBREW_CASK_OPTS=\"--appdir=/Applications\"" >> .zshrc
