@@ -3,6 +3,7 @@ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | 
 cp zshrc ~/.zshrc
 chsh -s /bin/zsh
 echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
 
 echo '\nSetup GIT\n'
 read -p 'Your full name: ' user_name
@@ -26,6 +27,11 @@ brew install zsh-syntax-highlighting
 brew install autojump
 brew install rbenv ruby-build
 brew install swiftlint
+
+echo '\nRuby stufs'
+rbenv install 2.3.1
+rbenv global 2.3.1
+gem instlall synx
 
 echo '\nInstalling APPs from Cask\n'
 echo "\nexport HOMEBREW_CASK_OPTS=\"--appdir=/Applications\"" >> .zshrc
