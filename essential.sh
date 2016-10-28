@@ -36,20 +36,12 @@ gem instlall synx
 echo '\nInstalling APPs from Cask\n'
 echo "\nexport HOMEBREW_CASK_OPTS=\"--appdir=/Applications\"" >> .zshrc
 brew install cask
-brew cask install megasync
 brew cask install sublime-text
 brew cask install appcleaner
-brew cask install charles
-brew cask install skype
-brew cask install google-chrome
 brew cask install shiftit
 brew cask install sourcetree
-brew cask install opensim
-brew cask install postman
 brew cask install playnow
-brew cask install appcode
 brew cask install spotify
-brew cask install genymotion
 brew cask install vlc
 
 echo '\nInstalling APPs from Mac APP Store\n'
