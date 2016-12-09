@@ -49,6 +49,7 @@ brew cask install paw
 brew cask install firefox
 brew cask install opensim
 brew cask install charles
+brew cask install fastlane
 
 echo '\nInstalling APPs from Mac APP Store\n'
 brew install mas
