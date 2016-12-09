@@ -34,7 +34,6 @@ rbenv install 2.3.1
 rbenv global 2.3.1
 gem install synx
 
-
 echo '\nInstalling APPs from Cask\n'
 echo "\nexport HOMEBREW_CASK_OPTS=\"--appdir=/Applications\"" >> .zshrc
 brew install cask
@@ -50,7 +49,6 @@ brew cask install paw
 brew cask install firefox
 brew cask install opensim
 brew cask install charles
-
 
 echo '\nInstalling APPs from Mac APP Store\n'
 brew install mas
