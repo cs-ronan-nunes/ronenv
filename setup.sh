@@ -28,11 +28,14 @@ brew install autojump
 brew install rbenv ruby-build
 brew install swiftlint
 brew install kylef/formulae/swiftenv --HEAD
+brew install jq
 
 echo '\nRuby stufs'
 rbenv install 2.3.1
 rbenv global 2.3.1
 gem install synx
+gem install bundler
+gem install cocoapods
 
 echo '\nInstalling APPs from Cask\n'
 echo "\nexport HOMEBREW_CASK_OPTS=\"--appdir=/Applications\"" >> .zshrc
@@ -42,11 +45,9 @@ brew cask install appcleaner
 brew cask install shiftit
 brew cask install sourcetree
 brew cask install playnow
-brew cask install spotify
 brew cask install vlc
 brew cask install slack
 brew cask install paw
-brew cask install firefox
 brew cask install opensim
 brew cask install charles
 brew cask install fastlane
@@ -60,4 +61,3 @@ mas install 809625456 # Asset Catalog Creator
 mas install 883070818 # SafeInCloud
 mas install 411673888 # EasyFind
 mas install 507257563 # Sip
-
